@@ -33,11 +33,10 @@ const Home = () => {
         setErrorMessage('')
 
         
-        if(Answer === '') {
+        if(Answer === '' && WordsCounter !== 10) {
            setErrorMessage('You should choose an answer')
-           console.log(WordsCounter)
 
-        } else if (WordsCounter === 9 ){
+        } else if (WordsCounter === 10 && Answer === '' ){
             setAllAnswers( (prevans) => [...prevans , Answer]  )
             console.log(WordsCounter)
             localStorage.setItem('answers' , AllAnswers)
@@ -58,22 +57,23 @@ const Home = () => {
     return (
      <Box sx={{padding:'7rem'}}>
         <Stack justifyContent='space-around' alignItems='center' gap={5}>
-        <WordContainer>{Words[WordsCounter]}</WordContainer>
+        <WordContainer>{Words[WordsCounter] ? Words[WordsCounter] : 'we\'re done'}</WordContainer>
 
-        <Grid container gap={1} justifyContent="center" alignItems='center'>
+       { WordsCounter < 10 && <Grid container gap={1} justifyContent="center" alignItems='center'>
             {/* showing  answers buttons */}
         {Chocies.map( choice  =>    { return (
           
         <Grid key={choice.id}  item lg={2} md={4} sm={4} xs={6}  onClick = { () => { SetAnswerHandler.call(this, choice.title) } } > 
         <Button variant="contained" sx={{width:'100%' }}>{choice.title}</Button>
         </Grid>  )})}
+
+        </Grid> }
         
-        </Grid>
 
         
         <Box> the answer is <strong>{Answer}</strong> </Box>
 
-        <Button  variant="contained" onClick={SubmitionHandler}>Submit</Button>
+        <Button  variant="contained" onClick={SubmitionHandler}>{WordsCounter < 10 ? 'Submit' : 'Show Result'}</Button>
 
        { ErrorMessage && <Typography sx={{fontWeight:'900px' , color:'#f50057'}}>{ErrorMessage}</Typography>}
         </Stack>
