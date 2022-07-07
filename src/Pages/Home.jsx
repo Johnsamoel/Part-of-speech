@@ -67,6 +67,7 @@ const Home = () => {
         <Grid key={choice.id}  item lg={2} md={4} sm={4} xs={6}  onClick = { () => { SetAnswerHandler.call(this, choice.title) } } > 
         <Button variant="contained" sx={{width:'100%' }}>{choice.title}</Button>
         </Grid>  )})}
+        
         </Grid>
 
         
