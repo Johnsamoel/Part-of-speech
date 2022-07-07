@@ -5,7 +5,9 @@ import Loader from '../Components/UI/Loader';
 import './App.css';
 
 // implementing dynamic importing for less initial load time and better performance.
-const Home = lazy(() => import('../Pages/Welcoming.jsx'));
+const Welcoming = lazy(() => import('../Pages/Welcoming.jsx'));
+const Test = lazy(() => import('../Pages/Home.jsx'));
+const Results = lazy( () => import('../Pages/Result.jsx') )
 
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
       <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Welcoming />} />
+        <Route path='/home' element={<Welcoming />} />
+        <Route path='/test' element={<Test />}  />
+        <Route path='/result' element={<Results />}  />
         </Routes>
       </BrowserRouter>
       </Suspense>
