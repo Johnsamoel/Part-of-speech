@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
 
-### `npm start`
+  <h3 align="center">Examination system</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <p align="center">
+    Description for my project which is an examination system.
+  </p>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-### `npm run build`
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contact](#contact)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run eject`
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+My project is about an English Examination system which targets students who are willing to examine their English knowledge by answering some questions, each time you will receive different questions and you are not only receiving the questions, but also you can listen to it's pronounciation in case you don't know it, at the end of the test you will receive your final score.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built With
+In this project I tented to used different libraries to implement my idea in a proper way, First off I used React.js as a frame work to implement the SPA priciples, I also implemented system design by using material ui and I tented to use TypeScript to write more Typed , organised and clean code.
 
-## Learn More
+Regarding the server side I used Node.js and MongoDB to make the database and api's.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [React.js](https://react.com)
+* [Node.js](https://Node.com)
+* [MongoDB](https://MongoDB.com)
+* [TypeScript](https://TypeScript.com)
+* [Material ui](https://Materialui.com)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- GETTING STARTED -->
+## Getting Started
 
-### Analyzing the Bundle Size
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+These are the required steps to start using the app.
+you will need to do the same steps to run backend app.
 
-### Advanced Configuration
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+```sh
+git clone https://github.com/your_username_/Project-Name.git
+```
+3. Install NPM packages
+```sh
+npm install
+```
+4. Enter this command to run the react app.
+```sh
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<!-- USAGE EXAMPLES -->
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- CONTACT -->
+## Contact
+
+mostafa magdy - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
